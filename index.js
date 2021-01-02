@@ -1,3 +1,9 @@
+const dragArea = document.querySelector('#tasksContainer');
+ new Sortable(dragArea, {
+    animation: 350
+});
+
+
 // add a new task
 function addTask() {
     let text = document.getElementById('inputTask').value;
